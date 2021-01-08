@@ -21,9 +21,6 @@ bot.hears("say hi", (ctx) => {
   ctx.reply("Hi");
 });
 
-bot.command("/^/heya/", (ctx) => {
-  ctx.reply(`mmg`);
-});
 bot.command("/echo", ({ reply, message }) => {
   const msg = message.text.replace("/echo", "");
   reply(msg);
