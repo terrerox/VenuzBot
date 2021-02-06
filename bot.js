@@ -39,7 +39,7 @@ bot.command("/wk", ({ reply, message }) => {
       extract = info.data.extract;
       reply(`Your result:\n\n${extract}`);
     } catch (e) {
-      reply("I've had a problem, try to search again");
+      reply("I had a problem, try to search again");
     }
   };
   getWikiInfo(url);
